@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: "mulish", sans-serif;
+
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0%;
+            background: linear-gradient(180deg, black, aqua);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .logo {
+            margin-left: 30px;
+            padding: 1%;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .nav-items ul {
+            list-style-type: none;
+            display: flex;
+            float: right;
+            display: flex;
+            color: black;
+            font-weight: 700;
+            margin: 0%;
+        }
+
+        .nav-items li a {
+            text-decoration: none;
+            margin: auto;
+            color: black;
+            padding: 30px;
+        }
+
+        .banner .content {
+            padding-left: 20%;
+        }
+
+        .banner {
+            display: flex;
+            margin-top: 15%;
+            width: 80%;
+        }
+
+        .banner .content h4 {
+            letter-spacing: 6px;
+            color: orange;
+            opacity: 0.5;
+        }
+
+        .banner .content h2 {
+            font-weight: 600;
+            line-height: 60px;
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+
+        .banner .content p {
+            font-weight: 300;
+        }
+
+        .banner .content .btn {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: rgba(247, 81, 21, 0.5);
+            color: black;
+            height: 10%;
+            width: 35%;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .banner .content .btn:hover {
+            background-color: white;
+        }
+
+        .feature-wrapper {
+            background: linear-gradient(180deg, pink, black);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2%, 6%;
+            margin-top: 100px;
+            border-bottom: 3px dashed rgb(0, 0, 0, 0.5);
+        }
+
+        .feature .icon {
+            background-color: rgba(214, 227, 235, 0.4);
+            text-align: center;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 1%, 3%;
+            line-height: 80px;
+            font-size: 100%;
+        }
+
+        .feature {
+            display: flex;
+        }
+
+        .feature .content {
+            padding-left: 10%;
+        }
+
+        .content h3 {
+            font-weight: 700;
+        }
+
+        .content p {
+            opacity: 0.7;
+            margin-bottom: 50px;
+        }
+
+        .container-image {
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+        }
+
+        .images {
+            padding-left: 40px;
+        }
+
+        .heading {
+            margin-top: 100px;
+            margin-left: 25%;
+        }
+
+        .vedio-demo {
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .vedio-demo .content {
+            background-color: orangered;
+            padding: 150px;
+            width: 40%;
+            font-size: 25px;
+            line-height: 40px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .vedio-demo .vedio-content {
+            background: url("https://imagevars.gulfnews.com/2019/12/20/OPN-191220-drinking-coffee-1576840906798_16f230ac82e_large.jpg ");
+            width: 60%;
+            background-repeat: no-repeat;
+            position: relative;
+            height:60%;
+           
+        }
+
+        .vedio-content .vedio a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .vedio a i {
+            color: black;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            border: 2px solid black;
+        }
+
+        .newsletter {
+            text-align: center;
+            width: 80%;
+            margin: 80px 60px 0px 80px;
+            margin-top: 50px;
+        }
+
+        .newsletter .form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .newsletter .content h1 {
+            font-weight: 800;
+            letter-spacing: 2px;
+            line-height: 30px;
+            font-size: 40px;
+        }
+
+        .newsletter-form .form input {
+            height: 50px;
+            border: 2px solid black;
+            width: 200px;
+            font-weight: 600;
+        }
+
+        .form .btn {
+            background-color: aqua;
+            height: 60px;
+            width: 200px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            border-radius: 30px;
+            margin: 80px 60px 0px 50px;
+            background-color: pink;
+            width: 95%;
+
+        }
+
+        .items p {
+
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .items ul {
+            list-style-type: none;
+            padding: 0%;
+        }
+
+        .items ul li {
+            opacity: 0.6;
+            line-height: 3;
+            padding: 6% 0%;
+        }
+
+        @media (min-width:320px) and (max-height:480px) {
+            .main-container: {
+                overflow-x: hidden;
+            }
+            .navbar{
+                width: 80%;
+            }
+              .container .banner {
+               
+                width: 80%;
+                flex-direction: column;
+            }
+
+            .banner .image img {
+                width: 85%;
+            }
+
+            .banner .content h2 {
+                font-size: 50px;
+                line-height: 57px;
+            }
+
+            .feature .feature-wrapper {
+                flex-direction: column;
+            }
+            .vedio-demo{
+                
+                flex-direction: column;
+            }
+            .vedio-demo .content{
+                width: 47%;
+            }
+            .vedio-demo .vedio-content {
+            background: url("https://imagevars.gulfnews.com/2019/12/20/OPN-191220-drinking-coffee-1576840906798_16f230ac82e_large.jpg ");
+            width: 40%;
+            height:80%;
+            background-repeat: repeat;
+            position: relative;
+            border: 5px solid black;
+        }
+            .newsletter{
+                width: 60%;
+            }
+
+.container-image .images img{
+    width:100%;
+    margin-bottom: 5%;
+}
+.footer {
+    width: 80%;
+}
+}
+</style>
+</head>
+  
+<body>
+    <!-- navbar-->
+  
+    
+    <!--banner section-->
+    <section class="container banner" style="display: flex;flex-direction: column;">
+        <div class="image">
+            <img src="./Landing Page_files/armchair-modern-designer-chair-on-260nw-766167025.jpg">
+        </div>
+        <div class="content">
+            <h4> Quality Design For All</h4>
+            <h2> Bring back the classic look by using shade. Easy home delivery!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quod?</p>
+            <button class="btn">Explore </button>
+        </div>
+    </section>
+    <!-- feature-->
+    <section class="container feature">
+        <div class="feature-wrapper">
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-star"></i> </div>
+                <div class="content">
+                    <h3> Best Quality</h3>
+                    <p>A team of experts passionate about product management</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-heart"></i> </div>
+                <div class="content">
+                    <h3> Best Quality</h3>
+                    <p>A team of experts passionate about product management</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-star"></i> </div>
+                <div class="content">
+                    <h3> Best Quality</h3>
+                    <p>A team of experts passionate about product management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--gallery section-->
+    <section>
+        <div class="heading">
+            <h2> Explore our exclusive design</h2>
+        </div>
+        <div class="container-image">
+            <div class="images">
+                <img style="border-radius: 10%;" src="./Landing Page_files/photo-1570974802254-4b0ad1a755f5" width="200" height="200">
+            </div>
+            <div class="images">
+                <img style="border-radius: 10%;" src="./Landing Page_files/photo-1570974802254-4b0ad1a755f5" width="200" height="200">
+            </div>
+            <div class="images">
+                <img style="border-radius: 10%;" src="./Landing Page_files/photo-1570974802254-4b0ad1a755f5" width="200" height="200">
+            </div>
+        </div>
+    </section>
+    <!--  vedio section-->
+    <section class="vedio-demo">
+        <div class="content">
+            <h1> It was super easy to share my unique concept. i got exactly what i ordered. Great Service! </h1>
+        </div>
+        <div class="vedio-content">
+            <div class="vedio">
+                <img src="./Landing Page_files/OPN-191220-drinking-coffee-1576840906798_16f230ac82e_large.jpg">
+                <a href="https://www.youtube.com/watch?v=p9TXtAQdmgo"><i class="fa-solid fa-play"></i> </a>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter-->
+    <section class=" container newsletter">
+        <div class="content">
+            <h1> Subscribe to our newsletter to get updated</h1>
+            <p> Get our latest update on your inbox. with lots of
+                unique blocks, you can easily build a page without coding.
+                build your next consultancy website with few minutes</p>
+        </div>
+        <div class="newsletter-form">
+            <form action="http://127.0.0.1:5502/webfundamental/index.html/projectportfolio.html/Landingpage.html">
+                <div class="form">
+                    <input type="email" id="email" placeholder="Enter Email Address" name="email">
+                    <button class="btn"> Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer-->
+    <footer class="container footer">
+        <div class="wrapper">
+            <div class="items">
+                <p> Contact</p>
+                <ul>
+                    <li>Living Room </li>
+                    <li> Dining Room</li>
+                    <li> Bed Rooms</li>
+                </ul>
+            </div>
+            <div class="items">
+                <p> Contact</p>
+                <ul>
+                    <li>Living Room </li>
+                    <li> Dining Room</li>
+                    <li> Bed Rooms</li>
+                </ul>
+            </div>
+            <div class="items">
+                <p> Contact</p>
+                <ul>
+                    <li>Living Room </li>
+                    <li> Dining Room</li>
+                    <li> Bed Rooms</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>

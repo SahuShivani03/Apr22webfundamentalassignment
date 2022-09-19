@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background: linear-gradient(45deg,white, black, aqua);
+            margin:0px;
+        }
+        .container{
+            background-color:red;
+            display:flex;
+            justify-content: center;
+        height:100%;
+      padding:50px;
+      
+        }
+       .item1,.item2, .item3 {
+           background-color: green;
+         width:15%;
+         margin-right: 5px;
+         display:flex;
+         height:50px;
+ }
+ .item2{
+     align-items: center;
+ }
+ .item3{
+     display: flex;
+    justify-content: right;
+     align-items :flex-end;
+ }
+
+        
+        h1{
+            text-align:center;
+            color: blue;
+        }
+        .item1{
+            text-align: top;
+        }
+    </style>
+    <title>flex box test</title>
+</head>
+<body>
+    <h1> Flex Box </h1>
+    <div class="container">
+        <div class="item1">
+       child1
+        </div>
+        <div class="item2">
+            child2
+          </div>
+          <div class="item3">
+            child3
+          </div>
+    </div>
+</body>
+</html>

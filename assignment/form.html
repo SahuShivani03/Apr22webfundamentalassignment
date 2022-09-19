@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background: linear-gradient(90deg,aqua,orange,black,red,blue);
+        }
+    </style>
+      <title>Application form</title>
+</head>
+<body>
+    <div>
+        <h2>Form Element</h2>
+    </div>
+    <form>
+        <br/>
+        <div>
+            <label>User Name</label>
+           <!-- <input id="" value="Shivani"/>-->
+           <input type="text" placeholder="enter your name"/>
+        </div>
+        <br/> <!-- to create a space between step by step-->
+        <div>
+            <label>Father Name</label>
+            <input id="" placeholder="enter father name"/>
+        </div>
+        <br/>
+        <div>
+            <label>Mother Name</label>
+            <input placeholder="enter mother name"/>
+        </div>
+        <br/>
+        <div>
+            <label> Male</label>
+            <input type="radio" name="gender"/>
+             <label> Female</label>
+            <input type="radio" name="gender"/>
+            </div>
+            <br/>
+              <div> 
+                  <h4> Checkboxes</h4>
+                <input type="checkbox"/>
+                <label> HTML</label>
+                <input type="checkbox"/>
+            <label> CSS</label>
+            <input type="checkbox"/>
+            <label> Java Script</label>
+            <input type="checkbox"/>
+            <label> React</label>
+            <input type="checkbox"/>
+            <label> React JS</label>
+              </div>
+          
+            <br/>
+        <div>
+            <label> Passward</label>
+            <input type="number, character, atleast one symbol" id=""placeholder="enter passward" />
+        </div>
+        <br/>
+        <div>
+            <label> Enter OTP</label>
+            <input placeholder="enter otp"type="text"  minlength="4" maxlength="4" />
+        </div>
+    </form>
+    <br/>
+    <div>
+        <lable> Enter pincode</lable>
+        <input type="number"/>
+    </div>
+    <br/>
+    <div>
+        <label> Disable</label>
+        <input disabled value="Geekster"/> <!-- disable mean that only can write whatever value i wrote other input i can't write-->
+    </div>
+    <br/>
+    <div>
+        <label> Readonly</label>
+        <input  readonly value="Geekster"/> <!-- if we write type="number" then geekster will not show in output -->
+         </div>
+         <br/>
+         <div>
+             <label>Choose the color</label>
+             <input type="color"/>
+         </div>
+         <br/>
+         <div>
+             <label>Choose the date</label>
+             <input type="date"/>
+         </div>
+         <br/>
+         <div>
+             <label>Choose the time</label>
+             <input type="time"/>
+         </div>
+         <br/>
+         <div>
+             <label>Choose the week</label>
+             <input type="week"/>
+         </div>
+         <br/>
+         <div>
+             <label>Choose the month</label>
+             <input type="month"/>
+         </div>
+         <br/>
+         <div>
+             <label>Choose the date & time</label>
+             <input type="datetime-local"/>
+         </div>
+         <br/>
+         <div>
+             <label>Choose the file</label>
+             <input type="file"/>
+         </div>
+         <br/>
+         <div>
+             <label>Choose the button</label>
+             <input type="button" value="login"/>
+         </div>
+         <br/>
+         
+<label> enter phone number </label>
+<input type="text">
+
+         <br/>
+         <label> search bar </label>
+         <input type="search">
+
+          <br/>
+          <div>
+            <label> city</label>
+              <input type="text"/>
+              <datalist id="datalist">
+                <option> kanpur</option>
+                <option> Lucknow</option>
+                <option> Delhi</option>
+                <option> Mumbai</option>
+            </datalist>
+          </div>
+          <br/>
+          <div>
+              <ul type="none">
+                  <li>
+                    <button> Submit</button>
+                  </li>
+              </ul>
+          </div>
+         
+    </body>
+</html>
